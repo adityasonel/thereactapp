@@ -33,7 +33,7 @@ export default class Header extends React.PureComponent {
     }
     _onPressShare = () => {
         let shareOptions = {
-            message: "Hey, check this application. Awesome application developed on React-Native.\n\nhttps://github.com/adityasonel"
+            message: "Hey, check this application. Awesome application developed on React-Native.\n\nhttps://github.com/adityasonel/TheReactApp"
         };
         Share.share(shareOptions)
             .then(action => {

@@ -1,0 +1,60 @@
+/**
+ * This is sample data structure used to show posts on "HomeTabScreen",
+ * in application. You can also upload this JSON to your Firebase Database.
+ */
+{
+    "TheReactApp": {
+        "Posts": {
+            "gscRUBa0NkMlPTeI": {
+                "desc": "desc one",
+                "imagelink": "www.google.com",
+                "title": "title one"
+            },
+            "59PqLhscwBQyRU6w": {
+                "desc": "desc two",
+                "imagelink": "www.google.com",
+                "title": "title two"
+            },
+            "2iJBiauLcp9NNKHD": {
+                "desc": "desc three",
+                "imagelink": "www.google.com",
+                "title": "title three"
+            },
+            "4z75wiZN0hGlJHg0": {
+                "desc": "desc four",
+                "imagelink": "www.google.com",
+                "title": "title four"
+            },
+            "8vUHt9O7dmCLt9ER": {
+                "desc": "desc five",
+                "imagelink": "www.google.com",
+                "title": "title five"
+            },
+            "L74IkHKObiOCahvi": {
+                "desc": "desc six",
+                "imagelink": "www.google.com",
+                "title": "title six"
+            },
+            "rAXRZSEuoNcY2Pbe": {
+                "desc": "desc seven",
+                "imagelink": "www.google.com",
+                "title": "title seven"
+            },
+            "Xjh7Zcna2NRljRCf": {
+                "desc": "desc eight",
+                "imagelink": "www.google.com",
+                "title": "title eight"
+            },
+            "OgZkoW07XB5LTr4t": {
+                "desc": "desc nine",
+                "imagelink": "www.google.com",
+                "title": "title nine"
+            },
+            "AHsRqxPscDtDGeRO": {
+                "desc": "desc ten",
+                "imagelink": "www.google.com",
+                "title": "title ten"
+            }
+        }
+    }
+}

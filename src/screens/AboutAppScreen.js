@@ -6,7 +6,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import LinearGradient from "react-native-linear-gradient";
 
 const githubIconSize = 24;
-let appUrl = "https://github.com/adityasonel";
+let appUrl = "https://github.com/adityasonel/TheReactApp";
 let firebaseUrl = "https://firebase.google.com";
 let reactNavigationUrl = "https://reactnavigation.org/docs/en/getting-started.html";
 let reactNativeVectorIconUrl = "https://github.com/oblador/react-native-vector-icons";

@@ -1,5 +1,9 @@
 import BuildConfig from "./BuildConfig";
 
+/**
+ * Add your Firebase Project keys below!
+ */
+
 var FirebaseConfig = {
     apiKey: BuildConfig.FIREBASE_API_KEY,
     authDomain: BuildConfig.FIREBASE_AUTH_DOMAIN,
