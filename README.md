@@ -1,8 +1,8 @@
 # TheReactApp 🚀
 
-A powerful React-Native Modules &amp; UI Components showcase. That show you the power and wisdom of React-Native in Mobile Application Development. TheReactApp is a mobile application template built with some others powerfull react native libraries like [React Navigation](https://reactnavigation.org), [React-Native Vector Icon](https://github.com/oblador/react-native-vector-icons), [React-Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient). Thanks to all respective developers - this libraries is all you need to build your react native app faster. Working Android Application demo coming soon on [Google PlayStore](https://play.google.com/store).
+A powerful React-Native Modules &amp; UI Components showcase. That show you the power and wisdom of React-Native in Mobile Application Development. TheReactApp is a mobile application template built with some others powerfull react native libraries like [React Navigation](https://reactnavigation.org), [React-Native Vector Icon](https://github.com/oblador/react-native-vector-icons), [React-Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient). Thanks to all respective developers - this libraries is all you need to build your react native app faster. Working Android Application demo coming soon on [Google PlayStore](https://play.google.com/store). For now you can download working APK here, [Download - TheReactApp](https://github.com/adityasonel/TheReactApp/raw/master/sample/thereactapp.apk)
 
-If you are newbie react-native developer there is many more things in this repo for you.
+If you are newbie React-Native Developer then this repo is 110% for you.
 
 ## Screenshots
 
