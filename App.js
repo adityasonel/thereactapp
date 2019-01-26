@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { createBottomTabNavigator, createStackNavigator, createAppContainer } from "react-navigation";
+import { createFluidNavigator } from "react-navigation-fluid-transitions";
 import { Platform, Easing, Animated } from "react-native";
 
 import HomeTabScreen from "./src/screens/HomeTabScreen";
 import NotificationTabScreen from "./src/screens/NotificationTabScreen";
 import ProfileTabScreen from "./src/screens/ProfileTabScreen";
 
+import ImageViewScreen from "./src/screens/ImageViewScreen";
 import AboutAppScreen from "./src/screens/AboutAppScreen";
 
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -98,7 +100,6 @@ const AppStack = createStackNavigator(
     {
         initialRouteName: "TabStack",
         headerMode: "none",
-        mode: Platform.OS === "ios" ? "modal" : "card",
         transitionConfig: Platform.OS === "android" ? TransitionConfiguration : ""
     }
 );

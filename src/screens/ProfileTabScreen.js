@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { StyleSheet, Text, View, StatusBar, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, StatusBar, Image, TouchableWithoutFeedback, TouchableOpacity } from "react-native";
 import Header from "../components/Header";
 import LinearGradient from "react-native-linear-gradient";
 
@@ -8,8 +8,11 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 const iconSize = 20;
 
 export default class ProfileTabScreen extends PureComponent {
-    _onpress = () => {
-        console.log("lollll");
+    constructor(props) {
+        super(props);
+    }
+    _onPressPorfilePic = () => {
+        this.props.navigation.navigate("ImageViewScreen");
     };
     render() {
         return (
@@ -27,7 +30,9 @@ export default class ProfileTabScreen extends PureComponent {
                     />
                     <Text style={styles.title}>Denial Rozar</Text>
                     <Text style={styles.email}>denialrozar@gmail.com</Text>
-                    <Image style={styles.image} source={require("../assests/images/profile-pic.jpg")} />
+                    <TouchableOpacity style={styles.imageContainer} onPress={this._onPressPorfilePic} activeOpacity={0.8}>
+                        <Image style={styles.image} source={require("../assests/images/profile-pic.jpg")} />
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.bottomContainer}>
                     <View style={styles.itemView}>
@@ -94,13 +99,19 @@ const styles = StyleSheet.create({
         color: "white",
         marginLeft: 32
     },
-    image: {
+    imageContainer: {
         width: 120,
         height: 120,
         borderRadius: 60,
         position: "absolute",
         right: 32,
-        top: 32,
+        top: 32
+    },
+    image: {
+        width: 120,
+        height: 120,
+        borderRadius: 60,
+        position: "absolute",
         borderColor: "rgba(255, 255, 255, 0.6)",
         borderWidth: 2
     },

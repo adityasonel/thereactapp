@@ -15,12 +15,19 @@ If you are newbie React-Native Developer then this repo is 110% for you.
 
 ## What's inside
 
--   Up-to-date code with AndroidX and XCode libraries
--   UI/UX Design from best dribbble templates
--   Modular and well-documented structure for application code
--   React Navigation for simple navigation
--   React-Native Linear Gradient for awesome gradient views
--   Icons are rendered with the help of React-Native Vector Icon
+-   [x] Up-to-date code with androidx and xcode libraries
+-   [x] UI/UX Design from best dribbble templates
+-   [x] Firebase Database Integration
+-   [x] Integrate React-Navigation
+-   [x] Integrate React-Native Linear Gradient
+-   [x] Use React-Native Vector Icon
+-   [ ] Transitions with React Navigation Fluid Transition
+-   [ ] Redux Store integration
+-   [ ] Authentication through firebase
+-   [ ] Firebase Cloudstore integration
+-   [ ] Support for large screen devices
+
+All uncheck features and many more sparking things are coming in future.
 
 ## Getting Started
 
@@ -38,11 +45,17 @@ or
 npm install
 ```
 
+#### 2. Link all native dependencies:
+
+```
+react-native link
+```
+
 That's it! Cool, right?
 
-## How to use
+#### 3. Integrate Firebase
 
-[Firebase](https://firebase.google.com) is used to render sample posts on HomeTab. For fetch data from firebase, you have to add your firebase keys in `FirebaseConfig.js` file
+[Firebase Database](https://firebase.google.com) is used to render sample data on HomeTab. For fetch data from firebase, you have to add your firebase keys in `FirebaseConfig.js` file that is,
 
 ```
 var FirebaseConfig = {
@@ -54,11 +67,37 @@ var FirebaseConfig = {
 };
 ```
 
-Get all your firebase keys and add here at `src/config/FirebaseConfig.js`. And that's all!!!
+Get all your firebase keys from [Firebase Console](https://console.firebase.google.com/) and add here at `src/config/FirebaseConfig.js`. And that's all!!!
 
 For more info about how to add firebase to react-native application check this [firebase blog post](https://firebase.googleblog.com/2016/01/the-beginners-guide-to-react-native-and_84.html).
 
-And there is many more sparking things coming in future...
+## Currently known issue
+
+As i stated above i am using latest androidx library in this project. But `react-native-gesture-handler` is still on v4 version of android sdk. So when you try to run application by `react-native run-android`, you can get an error as
+
+```
+error: package android.support.v4.util does not exist
+```
+
+#### Solving with android studio
+
+If you are familiar with android studio, you can solve this error by just import latest dependencies. Search for files `RNGestureHandlerEvent.java` and `RNGestureHandlerStateChangeEvent.java` in android studio, replace older version dependencies with newer version. There you go, everything is perfect. Just run application again.
+
+#### Solving without android studio
+
+But if you are not want to open android studio you can also solve this issue but in much longer way. Search for this to files in project `RNGestureHandlerEvent.java` and `RNGestureHandlerStateChangeEvent.java` or go to file location in your system.
+
+That is normally, `node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/` search for above two files and replace this line
+
+```bash
+import android.support.v4.util.Pools;
+
+# with
+
+import androidx.core.util.Pools;
+```
+
+There you go, everything is perfect. Just run application again. But i am not recommending this way because this is not relevant method to solve dependencies or library version issues in android developement.
 
 ## Contributing
 
